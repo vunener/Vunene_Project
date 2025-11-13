@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 05, 2025 at 09:03 PM
+-- Generation Time: Nov 13, 2025 at 10:48 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -66,17 +66,28 @@ CREATE TABLE `bookings` (
 --
 
 INSERT INTO `bookings` (`bookingID`, `studentID`, `lockerID`, `status`, `bookingDate`, `approvalDate`, `approvedByAdminID`, `comments`) VALUES
-(209, 1028, 72, 'completed', '2026-04-07', '2025-11-05 01:17:34', 1, 'Your booking is pending | wainting for an approval.'),
-(210, 1029, 73, 'completed', '2026-06-22', '2025-11-05 01:16:25', 1, 'Your booking is pending | wainting for an approval.'),
-(211, 1030, 74, 'completed', '2026-01-26', '2025-11-05 01:17:52', 1, 'Your booking is pending | wainting for an approval.'),
-(212, 1031, 75, 'completed', '2026-03-29', '2025-11-05 01:17:46', 1, 'Your booking is pending | wainting for an approval.'),
-(213, 1032, 76, 'completed', '2026-05-01', '2025-11-05 01:16:32', 1, 'Your booking is pending | wainting for an approval.'),
-(214, 1033, 77, 'completed', '2026-04-28', '2025-11-05 01:17:25', 1, 'Your booking is pending | wainting for an approval.'),
-(215, 1034, 78, 'completed', '2026-03-05', '2025-11-05 02:20:05', 1, 'Your booking is pending | wainting for an approval.'),
-(216, 1035, 79, 'completed', '2026-01-11', '2025-11-05 02:26:06', 1, 'Your booking is pending | wainting for an approval.'),
-(217, 1036, 80, 'completed', '2026-03-21', '2025-11-05 02:32:18', 1, 'Your booking is pending | wainting for an approval.'),
-(218, 1037, 81, 'completed', '2026-03-07', '2025-11-05 02:38:41', 1, 'Your booking is pending | wainting for an approval.'),
-(219, 1039, 82, 'pending', '2026-04-01', NULL, NULL, 'Your booking is pending | wainting for an approval.');
+(258, 1089, 74, 'completed', '2026-03-07', '2025-11-08 10:46:59', 2, 'Your booking is pending approval.'),
+(259, 1090, 75, 'completed', '2026-03-28', '2025-11-08 10:52:03', 1, 'Your booking is pending approval.'),
+(260, 4, 76, 'completed', '2026-02-27', '2025-11-08 10:55:45', 1, 'Your booking is pending approval.'),
+(261, 1091, 77, 'completed', '2026-06-12', '2025-11-08 11:42:52', 1, 'Your booking is pending approval.'),
+(262, 1092, 78, 'completed', '2026-02-10', '2025-11-08 14:52:33', 1, 'Your booking is pending approval.'),
+(263, 1093, 79, 'completed', '2026-03-31', '2025-11-08 14:51:29', 1, 'Your booking is pending approval.'),
+(264, 1094, 80, 'completed', '2026-05-11', '2025-11-08 14:51:38', 1, 'Your booking is pending approval.'),
+(265, 1095, 81, 'completed', '2026-06-19', '2025-11-08 14:03:37', 1, 'Your booking is pending approval.'),
+(266, 1096, 82, 'completed', '2026-03-06', '2025-11-08 14:50:56', 1, 'Your booking is pending approval.'),
+(267, 1097, 83, 'completed', '2026-03-09', '2025-11-08 14:52:15', 1, 'Your booking is pending approval.'),
+(268, 1098, 84, 'completed', '2026-06-29', '2025-11-08 14:51:12', 1, 'Your booking is pending approval.'),
+(269, 1099, 85, 'completed', '2026-03-19', '2025-11-08 14:52:05', 1, 'Your booking is pending approval.'),
+(270, 1100, 86, 'completed', '2026-02-17', '2025-11-08 14:52:27', 1, 'Your booking is pending approval.'),
+(271, 1101, 87, 'completed', '2026-04-24', '2025-11-08 14:51:23', 1, 'Your booking is pending approval.'),
+(272, 1102, 88, 'completed', '2026-03-21', '2025-11-08 14:51:59', 1, 'Your booking is pending approval.'),
+(273, 1103, 89, 'completed', '2026-03-28', '2025-11-08 14:51:54', 1, 'Your booking is pending approval.'),
+(274, 1104, 90, 'completed', '2026-01-18', '2025-11-08 14:52:39', 1, 'Your booking is pending approval.'),
+(275, 1105, 91, 'completed', '2026-06-20', '2025-11-08 14:51:17', 1, 'Your booking is pending approval.'),
+(276, 1106, 92, 'completed', '2026-03-11', '2025-11-08 14:52:10', 1, 'Your booking is pending approval.'),
+(277, 1107, 93, 'completed', '2026-02-26', '2025-11-08 14:52:20', 1, 'Your booking is pending approval.'),
+(278, 1108, 72, 'completed', '2026-05-04', '2025-11-10 11:50:59', 1, 'Your booking is pending approval.'),
+(281, 1111, 73, 'completed', '2026-01-31', '2025-11-13 11:40:30', 1, 'Your booking is pending approval.');
 
 -- --------------------------------------------------------
 
@@ -98,27 +109,27 @@ CREATE TABLE `lockers` (
 
 INSERT INTO `lockers` (`lockerID`, `studentGrade`, `lockerNumber`, `lockerLocation`, `availability`) VALUES
 (72, 'Grade 12', 'L01', 'Top', 1),
-(73, 'Grade 11', 'L02', 'Top', 1),
-(74, 'Grade 8', 'L03', 'Top', 1),
-(75, 'Grade 11', 'L04', 'Top', 1),
-(76, 'Grade 9', 'L05', 'Top', 1),
-(77, 'Grade 10', 'L06', 'Top', 1),
-(78, 'Grade 12', 'L07', 'Top', 1),
-(79, 'Grade 12', 'L08', 'Top', 1),
-(80, 'Grade 12', 'L09', 'Top', 1),
-(81, 'Grade 12', 'L10', 'Top', 1),
-(82, 'Grade 9', 'L11', 'Top', 1),
-(83, NULL, 'L12', 'Top', 0),
-(84, NULL, 'L13', 'Top', 0),
-(85, NULL, 'L14', 'Top', 0),
-(86, NULL, 'L15', 'Top', 0),
-(87, NULL, 'L16', 'Top', 0),
-(88, NULL, 'L17', 'Top', 0),
-(89, NULL, 'L18', 'Top', 0),
-(90, NULL, 'L19', 'Top', 0),
-(91, NULL, 'L20', 'Top', 0),
-(92, NULL, 'L21', 'Top', 0),
-(93, NULL, 'L22', 'Top', 0),
+(73, 'Grade 8', 'L02', 'Top', 1),
+(74, NULL, 'L03', 'Top', 0),
+(75, 'Grade 12', 'L04', 'Top', 1),
+(76, 'Grade 10', 'L05', 'Top', 1),
+(77, 'Grade 8', 'L06', 'Top', 1),
+(78, 'Grade 8', 'L07', 'Top', 1),
+(79, 'Grade 9', 'L08', 'Top', 1),
+(80, 'Grade 10', 'L09', 'Top', 1),
+(81, 'Grade 11', 'L10', 'Top', 1),
+(82, 'Grade 11', 'L11', 'Top', 1),
+(83, 'Grade 10', 'L12', 'Top', 1),
+(84, 'Grade 9', 'L13', 'Top', 1),
+(85, 'Grade 8', 'L14', 'Top', 1),
+(86, 'Grade 8', 'L15', 'Top', 1),
+(87, 'Grade 9', 'L16', 'Top', 1),
+(88, 'Grade 10', 'L17', 'Top', 1),
+(89, 'Grade 11', 'L18', 'Top', 1),
+(90, 'Grade 11', 'L19', 'Top', 1),
+(91, 'Grade 10', 'L20', 'Top', 1),
+(92, 'Grade 9', 'L21', 'Top', 1),
+(93, 'Grade 8', 'L22', 'Top', 1),
 (94, NULL, 'L23', 'Top', 0),
 (95, NULL, 'L24', 'Top', 0),
 (96, NULL, 'L25', 'Top', 0),
@@ -195,18 +206,30 @@ CREATE TABLE `notifications` (
 --
 
 INSERT INTO `notifications` (`notificationID`, `parentID`, `title`, `adminID`, `type`, `message`, `status`, `dateSent`) VALUES
-(257, 76, 'Locker Booking Request', 1, 'Email', 'The student Tsiki Maswanganye has a locker booking pending approval.', 'completed', '2025-11-04 23:34:36'),
-(258, 76, 'Locker Booking Request', 1, 'Email', 'The student Thandy Maswanganye has a locker booking pending approval.', 'completed', '2025-11-05 00:17:21'),
-(259, 76, 'Locker Booking Request', 1, 'Email', 'The student Nhlamulo Maswanganye has a locker booking pending approval.', 'completed', '2025-11-05 00:23:19'),
-(260, 76, 'Locker Booking Request', 1, 'Email', 'The student Nthavi Maswanganye has a locker booking pending approval.', 'completed', '2025-11-05 00:24:26'),
-(261, 79, 'Locker Booking Request', 1, 'Email', 'The student Ntombinyana Makaringe has a locker booking pending approval.', 'completed', '2025-11-05 01:13:26'),
-(262, 79, 'Locker Booking Request', 1, 'Email', 'The student Nthavelani Makaringe has a locker booking pending approval.', 'completed', '2025-11-05 01:14:17'),
-(263, 79, 'Locker Booking Request', 1, 'Email', 'The student Tutu Makaringe has a locker booking pending approval.', 'completed', '2025-11-05 02:06:57'),
-(264, 1, 'Locker Booking Request', 1, 'Email', 'The student Michael Smith has a locker booking pending approval.', 'completed', '2025-11-05 02:23:35'),
-(265, 79, 'Locker Booking Request', 1, 'Email', 'The student Ginita Makaringe has a locker booking pending approval.', 'completed', '2025-11-05 02:31:07'),
-(266, 76, 'Locker Booking Request', 1, 'Email', 'The student Nyeleti Maswanganye has a locker booking pending approval.', 'completed', '2025-11-05 02:37:20'),
-(267, 1, 'Student Added to Waiting List', 1, 'Email', 'The student Thomas Smith has been added to the locker waiting list.', 'pending', '2025-11-05 02:40:45'),
-(268, 76, 'Locker Booking Request', 1, 'Email', 'The student Kulani Maswanganye has a locker booking pending approval.', 'pending', '2025-11-05 13:03:25');
+(310, 76, 'Student added to waiting list', 1, 'Email', 'The student Thandy maswanganye has been added to the locker waiting list.', 'completed', '2025-11-08 09:40:35'),
+(311, 79, 'Student added to waiting list', 1, 'Email', 'The student Giniver Makaringe has been added to the locker waiting list.', 'completed', '2025-11-08 10:27:14'),
+(312, 80, 'Student added to waiting list', 1, 'Email', 'The student Suna Maswanganye has been added to the locker waiting list.', 'completed', '2025-11-08 10:43:12'),
+(315, 1, 'Student added to waiting list', 1, 'Email', 'The student Tyrian Smith has been added to the locker waiting list.', 'completed', '2025-11-08 10:59:54'),
+(316, 76, 'Student added to waiting list', 1, 'Email', 'The student Tsiki Maswanganye has been added to the locker waiting list.', 'completed', '2025-11-08 11:44:11'),
+(317, 76, 'Student added to waiting list', 1, 'Email', 'The student Yini Maswanganye has been added to the locker waiting list.', 'completed', '2025-11-08 11:48:45'),
+(318, 76, 'Student added to waiting list', 1, 'Email', 'The student Ntombizodwa Maswanganye has been added to the locker waiting list.', 'completed', '2025-11-08 11:51:21'),
+(319, 76, 'Student added to waiting list', 1, 'Email', 'The student Macks Maswanganye has been added to the locker waiting list.', 'completed', '2025-11-08 11:55:09'),
+(320, 79, 'Student added to waiting list', 1, 'Email', 'The student Wesley Makaringe has been added to the locker waiting list.', 'completed', '2025-11-08 11:59:04'),
+(321, 79, 'Student added to waiting list', 1, 'Email', 'The student Puggy Makaringe has been added to the locker waiting list.', 'completed', '2025-11-08 12:13:26'),
+(322, 79, 'Student added to waiting list', 1, 'Email', 'The student Shelly Makaringe has been added to the locker waiting list.', 'completed', '2025-11-08 12:14:48'),
+(323, 79, 'Student added to waiting list', 1, 'Email', 'The student Abby Makaringe has been added to the locker waiting list.', 'completed', '2025-11-08 12:17:06'),
+(324, 81, 'Student added to waiting list', 1, 'Email', 'The student Kakgiso Ndaba has been added to the locker waiting list.', 'completed', '2025-11-08 12:19:34'),
+(325, 81, 'Student added to waiting list', 1, 'Email', 'The student Mamolifi Ndaba has been added to the locker waiting list.', 'completed', '2025-11-08 12:34:52'),
+(326, 81, 'Student added to waiting list', 1, 'Email', 'The student Nolitha Ndaba has been added to the locker waiting list.', 'completed', '2025-11-08 12:37:56'),
+(327, 81, 'Student added to waiting list', 1, 'Email', 'The student Zakhele Ndaba has been added to the locker waiting list.', 'completed', '2025-11-08 12:39:40'),
+(328, 80, 'Student added to waiting list', 1, 'Email', 'The student Rully Maswanganye has been added to the locker waiting list.', 'completed', '2025-11-08 12:41:30'),
+(329, 80, 'Student added to waiting list', 1, 'Email', 'The student Lavi Maswanganye has been added to the locker waiting list.', 'completed', '2025-11-08 12:42:31'),
+(330, 80, 'Student added to waiting list', 1, 'Email', 'The student Ntsaki Maswanganye has been added to the locker waiting list.', 'completed', '2025-11-08 12:44:03'),
+(331, 80, 'Student added to waiting list', 1, 'Email', 'The student Chris Maswanganye has been added to the locker waiting list.', 'completed', '2025-11-08 12:45:24'),
+(332, 83, 'Student added to waiting list', 1, 'Email', 'The student Rato Manzini has been added to the locker waiting list.', 'completed', '2025-11-10 11:43:18'),
+(333, 84, 'Student added to waiting list', 1, 'Email', 'The student Em Mzamo has been added to the locker waiting list.', 'completed', '2025-11-10 11:58:21'),
+(334, 85, 'Student added to waiting list', 1, 'Email', 'The student Koppy Ramru has been added to the locker waiting list.', 'completed', '2025-11-10 12:14:10'),
+(335, 86, 'Student added to waiting list', 1, 'Email', 'The student Matimu Siweya has been added to the locker waiting list.', 'completed', '2025-11-13 11:26:56');
 
 -- --------------------------------------------------------
 
@@ -235,9 +258,9 @@ CREATE TABLE `parents` (
 
 INSERT INTO `parents` (`parentID`, `parentTitle`, `parentIDNumber`, `parentName`, `parentSurname`, `parentEmailAddress`, `parentPhoneNumber`, `parentHomeAddress`, `parentUsername`, `parentPassword`, `preferredNotification`, `dateCreated`) VALUES
 (1, 'Mr', '7110115033116', 'Joe', 'Smith', 'yinhlanthavela@gmail.com', '0821234567', '123 Maple St', 'jsmith', '$2y$10$qWGh.LtjbxKAnUxi.ptF6urtls/xJ7tSI8l/r/hGQ80GQPB8HJqPi', 'Email', '2025-06-20 10:24:33'),
-(2, 'Mrs', '7903018701182', 'Mary', 'Johnson', 'mary.johnson@gmail.com', '0832345678', '456 Oak Ave', 'mjohnson', 'mjohnson$2345', 'Email', '2025-06-20 10:24:33'),
+(2, 'Mrs', '7903018701182', 'Mary', 'Johnson', 'mary.johnson@gmail.com', '0832345678', '456 Oak Ave', 'mjohnson', '$2y$10$Syq1uYEPc8SLJHcZdMmfpeVR6lVMXelEJNNEYxk58IAVPeic72o8i', 'Email', '2025-06-20 10:24:33'),
 (3, 'Ms', '9504200125035', 'Linda', 'Brown', 'linda.brown@gmail.com', '0843456789', '789 Pine Rd', 'lbrown', '$2y$10$qWGh.LtjbxKAnUxi.ptF6urtls/xJ7tSI8l/r/hGQ80GQPB8HJqPi', 'Email', '2025-06-20 10:24:33'),
-(4, 'Mr', '9411277787016', 'David', 'Johnson', 'david.johnson@gmail.com', '0745678901', '321 Maple Lane', 'djohnson', 'djohnson$5678', 'Email', '2025-06-20 10:24:33'),
+(4, 'Mr', '9411277787016', 'David', 'Johnson', 'david.johnson@gmail.com', '0745678901', '321 Maple Lane', 'djohnson', '$2y$10$9O58Mv5tkID2Ec0exRWuO.eTEP3IrCZdxZtGo6UTMzXaKsayi7B2q', 'Email', '2025-06-20 10:24:33'),
 (5, 'Mrs', '9298654199120', 'Emma', 'Wilson', 'emma.wilson@gmail.com', '0756789012', '654 Cedar Drive', 'ewilson1', 'ewilson$6789', 'Email', '2025-06-20 10:24:33'),
 (6, 'Dr', '9212011817041', 'Robert', 'Taylor', 'robert.taylor@gmail.com', '0767890123', '987 Birch Boulevard', 'rtaylor1', 'rtaylor$7890', 'Email', '2025-06-20 10:24:33'),
 (7, 'Ms', '5004038523192', 'Linda', 'Anderson', 'linda.anderson@gmail.com', '0778901234', '135 Spruce Street', 'landerson1', 'landerson$8901', 'Email', '2025-06-20 10:24:33'),
@@ -303,10 +326,15 @@ INSERT INTO `parents` (`parentID`, `parentTitle`, `parentIDNumber`, `parentName`
 (67, 'Mr', '6908192658011', 'Thabang ', 'Sithole', 'thabang.sithole@gmail.com', '0784962187', '245 Key Street', 'tsithole', 'tsithole$4962', 'Email', '2025-06-20 10:24:33'),
 (68, 'Dr', '7208192658012', 'Kenneth', 'Maluleke', 'kenneth.maluleke@gmail.com', '0764962198', '623 Teka Street', 'kmaluleke', 'kmaluleke$4962', 'Email', '2025-06-20 10:24:33'),
 (69, 'Dr', '7708192658013', 'Kingston', 'Mahlaule', 'kingston.mahlaule@gmail.com', '0724962112', '222 Kuma Street', 'kmahlaule', 'kmahlaule$4962', 'Email', '2025-06-20 10:24:33'),
-(74, 'Mrs', '8301077788082', 'Tiyani', 'Nkuna', 'yinhlanthavela@gmail.com', '0726541526', '85 Standstand street, Centurion', 'Tiyani', '$2y$10$HIyxy29umFq23uvtf8QMkODfaT60XcxhQVxjTICSB4yzL.snhHp/O', 'Email', '2025-09-10 13:22:30'),
-(76, 'Mr', '9003155588001', 'Mondi', 'Maswanganye', 'yinhlanthavela@gmail.com', '0733984629', 'Success Steet, Highveld, Centurion 0157\r\nTurnhouse Steet, Highveld, Centurion 0157', 'Mondi', '$2y$10$95RbWGOjWrwpnqKKEHD6Ee3z7wI2AiDmlRu2tnaV/HXc37zLeeJyu', 'Email', '2025-10-02 21:39:51'),
+(76, 'Mr', '9003155588001', 'Mondi', 'Maswanganye', 'yinhlanthavela@gmail.com', '0733984629', 'Success Steet, Highveld, Centurion 0157', 'Mondi', '$2y$10$95RbWGOjWrwpnqKKEHD6Ee3z7wI2AiDmlRu2tnaV/HXc37zLeeJyu', 'Email', '2025-10-02 21:39:51'),
 (79, 'Ms', '8202166677077', 'Rahel', 'Makaringe', 'yinhlanthavela@gmail.com', '0733984629', 'Giyani Main Road', 'Rahel', '$2y$10$XZTK56Ietf54yVdm8RBvPe.kW47Vs954eplzr0iD/NLatGWbEZCei', 'Email', '2025-10-27 22:22:59'),
-(80, 'Mrs', '9003155588002', 'Gladys', 'Maswanganye', 'yinhlanthavela@gmail.com', '0773984628', 'Higveld, Centurion\r\nTurnhouse Street', 'Gladys', '$2y$10$/aGFta7Hx59WkMTnx4vP.uDvUXPnZGvxJ2vqdMsV7c7EdHArRIFnq', 'Email', '2025-11-05 00:00:54');
+(80, 'Mrs', '9003155588002', 'Gladys', 'Maswanganye', 'yinhlanthavela@gmail.com', '0773984628', 'Higveld, Centurion\r\nTurnhouse Street', 'Gladys', '$2y$10$/aGFta7Hx59WkMTnx4vP.uDvUXPnZGvxJ2vqdMsV7c7EdHArRIFnq', 'Email', '2025-11-05 00:00:54'),
+(81, 'Mr', '8202166677009', 'David', 'Ndaba', 'yinhlanthavela@gmail.com', '0733884608', 'Tin Street, Dupatse, NW, 0110', 'David', '$2y$10$Pj7ZPEFLF5FZ83x4AvuSXOrnIuqF9ZgdOpg9M7LAh54NDTK9HJhbi', 'Email', '2025-11-07 16:25:46'),
+(82, 'Mrs', '8106166688077', 'Cassy', 'Scott', 'yinhlanthavela@gmail.com', '0733333330', 'Calton Center, Johannesburg', 'Cassy', '$2y$10$gF54lriAZ7/Z8jQxd2tZJOEAMISX1ugkWg.BgBC94Pk2Ye1klGDLC', 'Email', '2025-11-10 09:50:42'),
+(83, 'Ms', '7912122233099', 'Lerato', 'Manzini', 'yinhlanthavela@gmail.com', '0733884606', 'Wow Street, Centurion, 0158', 'Lerato', '$2y$10$vMH.eAm3649KlhI.M2jy.eHheQf4B5HdTi6nJcEXpousUhZTsuKrK', 'Email', '2025-11-10 11:41:48'),
+(84, 'Mr', '8202166677006', 'Emmy', 'Mzamo', 'yinhlanthavela@gmail.com', '0733884605', 'Pinky Ave, Garden Gate, GP, 0156', 'Emmy', '$2y$10$WALVbxUTV0Rh3use2kemau5UvrcE4NCIz4ThiDR3plOlCbbOJ54/6', 'Email', '2025-11-10 11:56:09'),
+(85, 'Mr', '8202166677005', 'Tlou', 'Ramaru', 'yinhlanthavela@gmail.com', '0733884604', 'Work Street, Thohoyandou, 0155', 'Tlou', '$2y$10$AZpqTEg9lDdocUIy4EQBV.6NgMxWmcNRaI9YDHIIMdsaTtgHxyDAe', 'Email', '2025-11-10 12:13:15'),
+(86, 'Ms', '8202166677000', 'Tholaphi', 'Siweya', 'yinhlanthavela@gmail.com', '0733884600', 'Olo Avenu, Bendor, Plk, 0157', 'Tholaphi', '$2y$10$FrEvXMhCCrmM23Q/r7OT7O6Orf04i1Uw7n6RzK0xwoMXb0JmksJQi', 'Email', '2025-11-13 11:22:24');
 
 -- --------------------------------------------------------
 
@@ -328,16 +356,20 @@ CREATE TABLE `payments` (
 --
 
 INSERT INTO `payments` (`paymentID`, `bookingID`, `amount`, `paymentDate`, `status`, `proofOfPayment`) VALUES
-(115, 212, 100.00, '2025-11-05 00:41:17', 'completed', 'uploads/proof_690a810da740f.pdf'),
-(116, 209, 100.00, '2025-11-05 00:41:45', 'completed', 'uploads/proof_690a81298dbef.pdf'),
-(117, 210, 100.00, '2025-11-05 00:42:07', 'completed', 'uploads/proof_690a813fe5b3c.pdf'),
-(118, 211, 100.00, '2025-11-05 00:42:23', 'completed', 'uploads/proof_690a814fdc6e2.pdf'),
-(119, 214, 100.00, '2025-11-05 01:14:54', 'completed', 'uploads/proof_690a88eeed6ca.pdf'),
-(120, 213, 100.00, '2025-11-05 01:15:13', 'completed', 'uploads/proof_690a890149582.pdf'),
-(121, 215, 100.00, '2025-11-05 02:10:28', 'completed', 'uploads/proof_690a95f47a14e.pdf'),
-(122, 216, 100.00, '2025-11-05 02:24:17', 'completed', 'uploads/proof_690a993117caa.pdf'),
-(123, 217, 100.00, '2025-11-05 02:32:00', 'completed', 'uploads/proof_690a9b0093541.pdf'),
-(124, 218, 100.00, '2025-11-05 02:38:11', 'completed', 'uploads/proof_690a9c739f3e3.pdf');
+(153, 259, 100.00, '2025-11-08 10:50:13', 'completed', 'uploads/proof_690f0445a7611.pdf'),
+(154, 258, 100.00, '2025-11-08 10:52:43', 'completed', 'uploads/proof_690f04dbc3690.pdf'),
+(155, 260, 100.00, '2025-11-08 10:55:01', 'completed', 'uploads/proof_690f056569781.pdf'),
+(156, 261, 100.00, '2025-11-08 11:00:51', 'completed', 'uploads/proof_690f06c3a891d.pdf'),
+(157, 262, 100.00, '2025-11-08 11:44:35', 'completed', 'uploads/proof_690f11034b473.pdf'),
+(158, 263, 100.00, '2025-11-08 11:50:03', 'completed', 'uploads/proof_690f124ba03c1.pdf'),
+(159, 264, 100.00, '2025-11-08 11:51:56', 'completed', 'uploads/proof_690f12bc9caf9.pdf'),
+(160, 265, 100.00, '2025-11-08 11:55:51', 'completed', 'uploads/proof_690f13a7969de.pdf'),
+(161, 266, 100.00, '2025-11-08 11:59:48', 'completed', 'uploads/proof_690f149448bcb.pdf'),
+(162, 268, 100.00, '2025-11-08 12:15:31', 'completed', 'uploads/proof_690f18431f32e.pdf'),
+(163, 267, 100.00, '2025-11-08 12:15:47', 'completed', 'uploads/proof_690f185339004.pdf'),
+(164, 269, 100.00, '2025-11-08 12:17:46', 'completed', 'uploads/proof_690f18ca39625.pdf'),
+(165, 278, 100.00, '2025-11-10 11:49:00', 'completed', 'uploads/proof_6911b50c50889.pdf'),
+(168, 281, 100.00, '2025-11-13 11:37:01', 'completed', 'uploads/proof_6915a6bd911b2.pdf');
 
 -- --------------------------------------------------------
 
@@ -363,7 +395,7 @@ CREATE TABLE `students` (
 
 INSERT INTO `students` (`studentID`, `studentSchoolNumber`, `studentName`, `studentSurname`, `dateOfBirth`, `gender`, `studentGrade`, `parentID`, `lockerID`) VALUES
 (1, '510010', 'Emma', 'Smith', '2010-04-12', 'Female', 'Grade 9', 1, 85),
-(2, '357874', 'Liam', 'Johnson', '2011-01-20', 'Male', 'Grade 8', 2, NULL),
+(2, '357874', 'Liam', 'Johnson', '2011-01-20', 'Male', 'Grade 9', 2, NULL),
 (3, '550037', 'Olivia', 'Brown', '2009-07-05', 'Female', 'Grade 10', 3, NULL),
 (4, '217985', 'Leem', 'Johnson', '2009-11-30', 'Male', 'Grade 10', 4, NULL),
 (5, '110216', 'Olivia', 'Wilson', '2010-03-25', 'Female', 'Grade 9', 5, NULL),
@@ -394,19 +426,19 @@ INSERT INTO `students` (`studentID`, `studentSchoolNumber`, `studentName`, `stud
 (30, '902543', 'Alice', 'Johnson', '2008-04-25', 'Female', 'Grade 11', 30, NULL),
 (31, '749847', 'Robert', 'White', '2010-11-10', 'Male', 'Grade 9', 31, NULL),
 (32, '611591', 'Liam', 'Hall', '2011-05-14', 'Male', 'Grade 9', 32, NULL),
-(33, '899951', 'Liam', 'Nkosi', '2011-08-22', 'Male', 'Grade 8', 33, NULL),
-(34, '264399', 'Robert', 'Thomas', '2011-12-02', 'Male', 'Grade 8', 34, NULL),
+(33, '899951', 'Liam', 'Nkosi', '2011-08-22', 'Male', 'Grade 9', 33, NULL),
+(34, '264399', 'Robert', 'Thomas', '2011-12-02', 'Male', 'Grade 9', 34, NULL),
 (35, '509342', 'Olivia', 'Taylor', '2011-07-30', 'Female', 'Grade 9', 35, NULL),
 (36, '895067', 'Alice', 'Taylor', '2010-01-19', 'Female', 'Grade 9', 36, NULL),
-(37, '828859', 'Ethan', 'Wilson', '2007-06-06', 'Male', 'Grade 12', 37, NULL),
+(37, '828859', 'Ethan', 'Wilson', '2007-06-06', 'Male', 'Grade 11', 37, NULL),
 (38, '628670', 'Ethan', 'Smith', '2009-03-03', 'Male', 'Grade 10', 38, NULL),
 (39, '508534', 'Emmar', 'Smith', '2009-09-09', 'Female', 'Grade 10', 39, NULL),
-(40, '773539', 'Johnnes', 'Hall', '2011-04-17', 'Male', 'Grade 8', 40, NULL),
-(41, '617741', 'Olive', 'Johnson', '2007-11-11', 'Female', 'Grade 12', 41, NULL),
-(42, '647927', 'Alice', 'Wilson', '2007-10-20', 'Female', 'Grade 12', 42, NULL),
+(40, '773539', 'Johnnes', 'Hall', '2011-04-17', 'Male', 'Grade 9', 40, NULL),
+(41, '617741', 'Olive', 'Johnson', '2007-11-11', 'Female', 'Grade 11', 41, NULL),
+(42, '647927', 'Alice', 'Wilson', '2007-10-20', 'Female', 'Grade 11', 42, NULL),
 (43, '277788', 'Olivia', 'Nkosi', '2009-06-05', 'Female', 'Grade 10', 43, NULL),
 (44, '382254', 'Michael', 'Nkosi', '2011-01-07', 'Male', 'Grade 9', 44, NULL),
-(45, '163680', 'Emmara', 'Wilson', '2011-09-21', 'Female', 'Grade 8', 45, NULL),
+(45, '163680', 'Emmara', 'Wilson', '2011-09-21', 'Female', 'Grade 9', 45, NULL),
 (46, '248256', 'Liamme', 'Nkosi', '2009-02-14', 'Male', 'Grade 10', 46, NULL),
 (47, '582399', 'Jammy', 'Hall', '2011-05-25', 'Male', 'Grade 10', 47, NULL),
 (48, '567866', 'Oliviaser', 'Johnson', '2010-08-08', 'Female', 'Grade 9', 48, NULL),
@@ -416,7 +448,7 @@ INSERT INTO `students` (`studentID`, `studentSchoolNumber`, `studentName`, `stud
 (52, '221375', 'Ava', 'Taylor', '2008-07-17', 'Female', 'Grade 11', 52, NULL),
 (53, '540787', 'Sophia', 'Taylor', '2011-06-11', 'Female', 'Grade 9', 53, NULL),
 (54, '309568', 'Jane', 'Wilson', '2010-02-09', 'Female', 'Grade 9', 54, NULL),
-(55, '801734', 'Olivia', 'Smith', '2007-05-15', 'Female', 'Grade 12', 55, NULL),
+(55, '801734', 'Olivia', 'Smith', '2007-05-15', 'Female', 'Grade 11', 55, NULL),
 (56, '868018', 'James', 'Brown', '2009-11-30', 'Male', 'Grade 10', 56, NULL),
 (57, '694925', 'Ava', 'Anderson', '2008-04-02', 'Female', 'Grade 11', 57, NULL),
 (58, '366289', 'Liam', 'Anderson', '2010-09-05', 'Male', 'Grade 9', 58, NULL),
@@ -426,24 +458,33 @@ INSERT INTO `students` (`studentID`, `studentSchoolNumber`, `studentName`, `stud
 (62, '310289', 'Wam ', 'Vuma', '2010-03-01', 'Male', 'Grade 9', 62, NULL),
 (63, '311289', 'Nko', 'Mabunda', '2010-06-26', 'Male', 'Grade 9', 63, NULL),
 (64, '312289', 'Tab', 'Ngobeni', '2008-11-13', 'Male', 'Grade 11', 64, NULL),
-(65, '313289', 'Dima', 'Hlungwane', '2007-04-04', 'Female', 'Grade 12', 65, NULL),
+(65, '313289', 'Dima', 'Hlungwane', '2007-04-04', 'Female', 'Grade 11', 65, NULL),
 (66, '314289', 'Sandile', 'Sithebe', '2008-01-27', 'Male', 'Grade 11', 66, NULL),
 (67, '315289', 'Lisedi', 'Sithole', '2010-07-23', 'Female', 'Grade 9', 67, NULL),
 (68, '316289', 'Hluma', 'Maluleke', '2008-06-06', 'Female', 'Grade 11', 68, NULL),
 (69, '317289', 'Hole', 'Mahlaule', '2008-12-15', 'Female', 'Grade 11', 69, NULL),
-(73, '520010', 'Liam', 'Smith', '2011-09-25', 'Male', 'Grade 8', 15, NULL),
-(1028, '977033', 'Tsiki', 'Maswanganye', '2008-12-12', 'Female', 'Grade 12', 76, 72),
-(1029, '977034', 'Thandy', 'Maswanganye', '2009-06-09', 'Female', 'Grade 11', 76, 73),
-(1030, '977035', 'Nhlamulo', 'Maswanganye', '2012-12-12', 'Male', 'Grade 8', 76, 74),
-(1031, '977036', 'Nthavi', 'Maswanganye', '2009-12-12', 'Female', 'Grade 11', 76, 75),
-(1032, '977037', 'Ntombinyana', 'Makaringe', '2011-02-03', 'Female', 'Grade 9', 79, 76),
-(1033, '977038', 'Nthavelani', 'Makaringe', '2010-02-03', 'Male', 'Grade 10', 79, 77),
-(1034, '977039', 'Tutu', 'Makaringe', '2008-12-12', 'Male', 'Grade 12', 79, 78),
-(1035, '977040', 'Michael', 'Smith', '2008-12-03', 'Male', 'Grade 12', 1, 79),
-(1036, '977041', 'Ginita', 'Makaringe', '2008-08-08', 'Female', 'Grade 12', 79, 80),
-(1037, '977042', 'Nyeleti', 'Maswanganye', '2008-01-02', 'Female', 'Grade 12', 76, 81),
-(1038, '977043', 'Thomas', 'Smith', '2008-06-06', 'Male', 'Grade 12', 1, 82),
-(1039, '977044', 'Kulani', 'Maswanganye', '2011-05-05', 'Female', 'Grade 9', 76, 82);
+(73, '520010', 'Liam', 'Smith', '2011-09-25', 'Male', 'Grade 9', 15, NULL),
+(1089, '977035', 'Suna', 'Maswanganye', '2008-08-08', 'Female', 'Grade 12', 80, 74),
+(1090, '977036', 'Thyi', 'Ndaba', '2008-07-06', 'Male', 'Grade 12', 81, 75),
+(1091, '977037', 'Tyrian', 'Smith', '2012-06-02', 'Male', 'Grade 8', 1, 77),
+(1092, '977038', 'Tsiki', 'Maswanganye', '2012-01-02', 'Female', 'Grade 8', 76, 78),
+(1093, '977039', 'Yini', 'Maswanganye', '2011-03-01', 'Male', 'Grade 9', 76, 79),
+(1094, '977040', 'Ntombizodwa', 'Maswanganye', '2010-05-06', 'Female', 'Grade 10', 76, 80),
+(1095, '977041', 'Macks', 'Maswanganye', '2009-03-02', 'Male', 'Grade 11', 76, 81),
+(1096, '977042', 'Wesley', 'Makaringe', '2009-02-05', 'Female', 'Grade 11', 79, 82),
+(1097, '977043', 'Puggy', 'Makaringe', '2010-04-06', 'Female', 'Grade 10', 79, 83),
+(1098, '977044', 'Shelly', 'Makaringe', '2011-03-09', 'Female', 'Grade 9', 79, 84),
+(1099, '977045', 'Abby', 'Makaringe', '2012-06-06', 'Female', 'Grade 8', 79, 85),
+(1100, '977046', 'Kakgiso', 'Ndaba', '2012-01-05', 'Female', 'Grade 8', 81, 86),
+(1101, '977047', 'Mamolifi', 'Ndaba', '2011-03-01', 'Female', 'Grade 9', 81, 87),
+(1102, '977048', 'Nolitha', 'Ndaba', '2010-09-10', 'Female', 'Grade 10', 81, 88),
+(1103, '977049', 'Zakhele', 'Ndaba', '2009-07-04', 'Male', 'Grade 11', 81, 89),
+(1104, '977050', 'Rully', 'Maswanganye', '2009-05-08', 'Male', 'Grade 11', 80, 90),
+(1105, '977051', 'Lavi', 'Maswanganye', '2010-02-05', 'Male', 'Grade 10', 80, 91),
+(1106, '977052', 'Ntsaki', 'Maswanganye', '2011-03-06', 'Female', 'Grade 9', 80, 92),
+(1107, '977053', 'Chris', 'Maswanganye', '2012-01-04', 'Male', 'Grade 8', 80, 93),
+(1108, '977054', 'Rato', 'Manzini', '2008-02-02', 'Female', 'Grade 12', 83, 72),
+(1111, '977055', 'Matimu', 'Siweya', '2012-01-11', 'Male', 'Grade 8', 86, 73);
 
 -- --------------------------------------------------------
 
@@ -460,13 +501,6 @@ CREATE TABLE `waitinglist` (
   `type` enum('Phone','Email') NOT NULL DEFAULT 'Email',
   `lockerID` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `waitinglist`
---
-
-INSERT INTO `waitinglist` (`waitingID`, `studentID`, `studentGrade`, `dateAdded`, `status`, `type`, `lockerID`) VALUES
-(84, 1038, 'Grade 12', '2025-11-05', 'Pending', 'Email', 82);
 
 --
 -- Indexes for dumped tables
@@ -543,7 +577,7 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `bookings`
 --
 ALTER TABLE `bookings`
-  MODIFY `bookingID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=220;
+  MODIFY `bookingID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=282;
 
 --
 -- AUTO_INCREMENT for table `lockers`
@@ -555,19 +589,19 @@ ALTER TABLE `lockers`
 -- AUTO_INCREMENT for table `notifications`
 --
 ALTER TABLE `notifications`
-  MODIFY `notificationID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=269;
+  MODIFY `notificationID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=336;
 
 --
 -- AUTO_INCREMENT for table `parents`
 --
 ALTER TABLE `parents`
-  MODIFY `parentID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
+  MODIFY `parentID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=87;
 
 --
 -- AUTO_INCREMENT for table `payments`
 --
 ALTER TABLE `payments`
-  MODIFY `paymentID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=125;
+  MODIFY `paymentID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=169;
 
 --
 -- AUTO_INCREMENT for table `students`
@@ -579,7 +613,7 @@ ALTER TABLE `students`
 -- AUTO_INCREMENT for table `waitinglist`
 --
 ALTER TABLE `waitinglist`
-  MODIFY `waitingID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=85;
+  MODIFY `waitingID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=132;
 
 --
 -- Constraints for dumped tables
